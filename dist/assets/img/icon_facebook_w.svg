@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: #666;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill-rule: evenodd;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="長方形_14" data-name="長方形 14" class="cls-1" width="64" height="64"/>
+    </clipPath>
+  </defs>
+  <g id="icon_facebook_w" class="cls-2">
+    <path id="facebook_logo" class="cls-3" d="M47.292,33.518V31.007a1.31,1.31,0,0,1,1.347-1.47h3.491V24.209H47.355A5.994,5.994,0,0,0,40.862,30.7V33.52H37.8V39.7h3.124V55.2H47.11V39.7H51.7l.184-2.451.367-3.736H47.292Z" transform="translate(-12.537 -7.367)"/>
+  </g>
+</svg>
