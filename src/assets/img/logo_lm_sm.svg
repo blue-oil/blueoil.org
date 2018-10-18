@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20 20">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-logo_lm_sm);
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+    <clipPath id="clip-logo_lm_sm">
+      <rect width="20" height="20"/>
+    </clipPath>
+  </defs>
+  <g id="logo_lm_sm" class="cls-1">
+    <path id="合体_2" data-name="合体 2" class="cls-2" d="M-402.353,304V286.353h-3.53V304h-2.353V286.353h-3.529v11.765h-2.354V284H-400v20ZM-420,304V284h2.353v17.646h5.882V304Z" transform="translate(420 -284.301)"/>
+  </g>
+</svg>
