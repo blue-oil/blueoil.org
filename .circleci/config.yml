@@ -1,6 +1,6 @@
 version: 2
 jobs:
-  build:
+  deploy:
     docker:
       - image: circleci/node:7.10
 
@@ -8,22 +8,19 @@ jobs:
 
     steps:
       - checkout
-
-      # Download and cache dependencies
-      - restore_cache:
-          keys:
-          - v1-dependencies-{{ checksum "functions/package.json" }}
-          # fallback to using the latest cache if no exact match is found
-          - v1-dependencies-
-
+      # Install firebase packages
       - run: sudo npm install -g firebase-tools
-      - run: cd functions && npm install
-
-      - save_cache:
-          paths:
-            - functions/node_modules
-          key: v1-dependencies-{{ checksum "functions/package.json" }}
-        
-      # deploy
+      # Deploy
       - run: firebase deploy --project "$FIREBASE_PJ" --token "$FIREBASE_TOKEN"
 
+workflows:
+  version: 2
+  build_and_deploy:
+    jobs:
+#     - build:
+      - deploy:
+#         requires:
+#           - build
+          filters:
+            branches:
+              only: master
