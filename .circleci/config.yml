@@ -15,7 +15,7 @@ jobs:
           name: Build
           command: npm run build
       - persist_to_workspace:
-          root: /tmp/workspace
+          root: ~/repo
           paths:
             - dist
 
@@ -27,7 +27,7 @@ jobs:
 
     steps:
       - attach_workspace:
-          at: /tmp/workspace
+          at: ~/repo
       - run:
           name: Install firebase packages
           command: sudo npm install -g firebase-tools
