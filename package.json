@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "The blue-oil.org website",
   "scripts": {
+    "start": "npm run build",
     "build": "npm run build:html && npm run build:assets && npm run build:css && npm run build:js",
     "build:html": "node-minify --compressor html-minifier --input 'src/index.html' --output 'dist/index.html'",
     "build:assets": "npm run build:assets-img && npm run build:assets-lib",
