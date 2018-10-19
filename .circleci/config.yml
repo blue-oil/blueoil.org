@@ -18,6 +18,7 @@ jobs:
           root: ~/repo
           paths:
             - dist
+            - firebase.json
 
   deploy:
     docker:
