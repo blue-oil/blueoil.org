@@ -1,7 +1,7 @@
 {
-  "name": "blue-oil.org",
+  "name": "blueoil.org",
   "version": "1.0.0",
-  "description": "The blue-oil.org website",
+  "description": "The blueoil.org website",
   "scripts": {
     "start": "npm run build",
     "build": "npm run build:html && npm run build:assets && npm run build:css && npm run build:js",
@@ -18,8 +18,8 @@
     "build:js-shape-overlays": "node-minify --compressor uglify-es --input 'src/assets/lib/ShapeOverlays/shape-overlays.js' --output 'dist/assets/lib/ShapeOverlays/shape-overlays.js'",
     "clean": "rimraf dist"
   },
-  "repository": "git@github.com:blue-oil/blue-oil.org.git",
-  "homepage": "https://blue-oil.org/",
+  "repository": "git@github.com:blue-oil/blueoil.org.git",
+  "homepage": "https://blueoil.org/",
   "private": true,
   "devDependencies": {
     "cpx": "^1.5.0",
